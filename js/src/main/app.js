@@ -1,8 +1,8 @@
 define([
     'src/main/routers/router',
-    'src/main/view/stats',
-], function(Workspace, Stats) {
+    'src/main/view/baby',
+], function(Workspace, BabyView) {
     new Workspace();
     Backbone.history.start();
-    new Stats();
+    new BabyView();
 });

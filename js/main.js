@@ -34,9 +34,11 @@ require([
     'src/main/app',
 ], function($, _, Backbone, AppView) {
     "use strict";
-    var ss = Backbone.View.extend({
+     Backbone.View.extend({
         initialize: function() {
             new AppView();
+            //初始化light7组件
+            $.init();
         }
     });
 

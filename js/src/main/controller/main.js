@@ -5,7 +5,6 @@ define([
 ], function(BaseController, Dataproxy, Main,Workspace) {
     var Controller = BaseController.extend({
         initialize: function() {
-            console.warn("1111111111111");
             //初始化路由
             new Workspace();
             Backbone.history.start();

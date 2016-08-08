@@ -16,60 +16,35 @@
 </head>
 <div class="page">
     <header class="bar bar-nav">
-        <a class="button button-link button-nav pull-left" href="/demos/card" data-transition='slide-out'>
-            <span class="icon icon-left"></span>
-            返回
-        </a>
-        <h1 class="title">我的生活</h1>
+        <a class="icon icon-me pull-left open-panel"></a>
+        <h1 class="title">宝贝的记录</h1>
     </header>
     <nav class="bar bar-tab">
         <a class="tab-item active" href="#">
             <span class="icon icon-home"></span>
-            <span class="tab-label">首页</span>
+            <span class="tab-label">宝贝的记录</span>
+        </a>
+        <a class="tab-item" id="star_item" href="javascript:;">
+            <span class="icon icon-star"></span>
+            <span class="tab-label">收藏</span>
         </a>
         <a class="tab-item" href="#">
             <span class="icon icon-me"></span>
             <span class="tab-label">我</span>
         </a>
-        <a class="tab-item" href="#">
-            <span class="icon icon-star"></span>
-            <span class="tab-label">收藏</span>
-        </a>
-        <a class="tab-item" href="#">
-            <span class="icon icon-settings"></span>
-            <span class="tab-label">设置</span>
-        </a>
     </nav>
     <div class="content">
-        <div class="page-index">
-            <div class="card">
-                <div style="background-image:url(//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250.3.0q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                <div class="card-content">
-                    <div class="card-content-inner">
-                        <p class="color-gray">发表于 2015/01/15</p>
-                        <p>此处是内容...</p>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="link">赞</a>
-                    <a href="#" class="link">更多</a>
-                </div>
-            </div>
-            <div class="card">
-                <div style="background-image:url(//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250.3.0q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                <div class="card-content">
-                    <div class="card-content-inner">
-                        <p class="color-gray">发表于 2015/01/15</p>
-                        <p>此处是内容...</p>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="link">赞</a>
-                    <a href="#" class="link">更多</a>
-                </div>
-            </div>
-            ... 可以多放几张卡片
-        </div>
+        <div class="page-index" id="page-index"></div>
+    </div>
+</div>
+<!-- popup, panel 等放在这里 -->
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal">
+    <div class="content-block">
+        <p>这是一个侧栏</p>
+        <p></p>
+        <!-- Click on link with "close-panel" class will close panel -->
+        <p><a href="#" class="close-panel">关闭</a></p>
     </div>
 </div>
 <body>
@@ -77,7 +52,6 @@
 <script type='text/javascript' src='js/lib/jquery/jquery-2.2.1.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='js/lib/light7/light7.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='js/lib/light7/light7-swiper.min.js' charset='utf-8'></script>
-
-<!--<script src="/your-js-file.js"></script>-->
+<script data-main="js/main" src="js/lib/require/require.js"></script>
 </body>
 </html>
